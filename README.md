@@ -10,3 +10,5 @@ Dentro de este proyecto, este módulo se dedicará al alojamiento de nuestro sis
 
 Este proyecto está inscrito en el certamen de proyectos de la UGR organizado por la OSL con el nombre de ALJALO PROJECT.
 
+
+**Toda está sujeto a cambios, puesto que en DAI aún no nos han dicho nada.
