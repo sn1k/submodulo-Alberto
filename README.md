@@ -2,7 +2,7 @@
 ## **Proyecto de IV(infraestructura Virtual junto con DAI(DESARROLO DE APLICACIONES DE INTERNET** ##
 
 
-Breve Descripción/Introducción:
+###Breve Descripción/Introducción:
 
 Este proyecto será realizado a lo largo del cuatrimestre junto con la asignatura de Diseño de Aplicaciones para Internet. Por lo tanto, desarrollaremos una aplicación web con un framework de alto nivel denominado Django(usado en la asignatura DAI), donde podrán usarlo varios usuarios al mismo tiempo.
 
