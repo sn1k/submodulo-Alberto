@@ -1,5 +1,5 @@
 # submodulo-Alberto
-## **Proyecto de IV(infraestructura Virtual junto con DAI(DESARROLO DE APLICACIONES DE INTERNET** ##
+## **Proyecto de IV junto con DAI** ##
 
 
 ###Breve Descripción/Introducción:
