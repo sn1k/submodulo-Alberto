@@ -184,5 +184,5 @@ script:
 
 Una vez subido a github, e indicado travis que trabaje con repositorio correspondiente debe salir esto:
 
-![travis]()
+![travis](https://i.gyazo.com/c1361cfcd8a1122644241ec491767f89.png)
 
