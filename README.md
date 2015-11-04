@@ -66,7 +66,42 @@ Tras esto, se almacenará nuestro voto
 ![resultados](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/pollaplication/resultado_zpsnyo2sp0p.png)
 
 
-**[Licencia](https://github.com/acasadoquijada/pollaplication/blob/master/README.md)**
+##Herramienta de construcción:
+
+Para este segundo apartado del hito he creado un Makefile, con las siguientes opciones:
+
+
+- install: instalamos todo lo necesario **make install**
+
+- test: pasaremos el test previamente creado. **make test**
+
+- run: ponemos en marcha la aplicación. **make run**
+
+- doc: generarermos la documentación. **make doc**
+
+- clean: se borran los archivos generados. **make clean**
+
+
+
+~~~
+#Makefile 
+#clean install test run doc
+
+clean:
+	- rm -rf *~*
+	- find . -name '*.pyc' -exec rm {} \;
+
+install: 
+	python setup.py install
+	
+test: 
+	python manage.py test
+	
+run:
+	python manage.py runserver
+doc:
+	epydoc --html polls/*.py 
+~~~
 ###Tests
 
 
@@ -151,5 +186,5 @@ script:
 
 Una vez subido a github, e indicado travis que trabaje con repositorio correspondiente debe salir esto:
 
-![travis](https://www.dropbox.com/s/uoyn00dq4dw8vph/img23.png?dl=1)
+![travis]()
 
