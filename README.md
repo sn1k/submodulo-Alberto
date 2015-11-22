@@ -185,3 +185,133 @@ Una vez subido a github, e indicado travis que trabaje con repositorio correspon
 
 ![travis](https://i.gyazo.com/c1361cfcd8a1122644241ec491767f89.png)
 
+
+
+## Despliegue en un Paas
+Esta práctica consistía en desplegar nuestra aplicación en un PaaS. Hemos dicidido usar Heroku, debido a que es fácil y gratuito, además del usado en los ejercicios del tema. Permite usar python y el Framework Django. Para su despliegue he necesitado modificar o crear los siguientes ficheros:
+
+- Procfile, el cual indica a heroku que tiene que lanzar:
+```
+web: gunicorn pollaplication.wsgi --log-file -
+
+```
+- requirements.txt: usado para especificar todo lo necesario para nuestra aplicación vaya, en mi caso es:
+```
+Django==1.8.6
+argparse==1.2.1
+dj-database-url==0.3.0
+dj-static==0.0.6
+django-toolbelt==0.0.1
+djangorestframework==3.3.1
+foreman==0.9.7
+futures==3.0.3
+gunicorn==19.3.0
+psycopg2==2.6.1
+requests==2.8.1
+requests-futures==0.9.5
+static3==0.6.1
+wheel==0.26.0
+whitenoise==2.0.4
+wsgiref==0.1.2
+
+```
+Despues de esto nos registramos en Heroku. Una vez registrados tendríamos que ejecutar una serie de comandos que ahora se especifican, para lanzar nuestra aplicación en heroku:
+```
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh   
+heroku login
+heroku create
+git add .
+git commit -m "upload v2
+git push heroku master
+
+```
+La base de datos que voy a usar en Heroku es **PostgreSQL**. Para ello:
+
+- Tengo *psycopg2* para poder usarla.
+- También tengo *dj_database_url*, tambien necesario para PostgreSQL.
+- Edité el archivo *setting.py* del proyecto y añadí lo siguiente( sacado del siguiente [enlace](http://stackoverflow.com/questions/26080303/improperlyconfigured-settings-databases-is-improperly-configured-please-supply):
+```
+
+import dj_database_url
+
+...
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+ALLOWED_HOSTS = ['*']
+ON_HEROKU = os.environ.get('PORT')
+if ON_HEROKU:
+    DATABASE_URL='postgres://uhaxlowwnbgqrv:3decYI2il-srwwKVSDV6a4G-xQ@ec2-54-83-36-203.compute-1.amazonaws.com:5432/da2k9559f8odld'
+    DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+.....
+
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+
+```
+
+- En **wsgi.py** puse lo siguiente:
+```
+import os
+
+from django.core.wsgi import get_wsgi_application
+from dj_static import Cling
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "apuestas.settings")
+
+#from whitenoise.django import DjangoWhiteNoise
+application = get_wsgi_application()
+
+
+application = Cling(get_wsgi_application())
+#application = DjangoWhiteNoise(application)
+```
+- Destacar que en DATABASE_URL se indica la url que sale para la base de datos postgreSQL que Heroku nos ofrece, hay que darle a show para verlo.
+- Subí cambios a github y hacer **git push heroku master**.
+- Ejecutar los comando **heroku run python manage.py makemigrations**, **heroku run python manage.py migrate** y **heroku run python manage.py createsuperuser** para sincronizar la base de datos PostgreSQL.
+
+Aplicación [desplegada](http://thawing-springs-6556.herokuapp.com/).
+
+Se añade el proceso de integración continua con snap-ci, para ello:
+
+- Nos registramos en  [https://snap-ci.com](https://snap-ci.com) y conectamos a nuestro repo.
+
+![snap_pipeline](https://i.gyazo.com/256f449541778eac2c1a4b60d25181c1.png)
+
+- Compruebo que el repositorio esta conectado con **Github** y que tiene el despliegue automático ( consultar pestaña Deploy ).
+
+![github](https://i.gyazo.com/7e00c7ae2240e3c38e7a7e07cb89a391.png)
+
+- Ahora, cada vez que realicemos un push a nuestro reopsitorio, se realizará un testeo previo a su posterior despliegue.
+
+
+- Aquí tenemos la etiqueta de Snap-ci, de que todo ha ido correctamente.
+
+![snapci](https://snap-ci.com/sn1k/submodulo-Alberto/branch/master/build_image)
+
+
+Con este último paso en snap-ci, se ha realizado la integración continua de mi aplicación, cada vez que haga un push se pasarán los test y se desplegará mi aplicación.
+
+-  Nota: **AVANCES**: la utilización de JSON con sus tests. Puede verse en el archivo **views.py**, su llamada en los **tests.py** y el archivo **serializers.py**.
+
+
+
+
+
+
+
+
+
+
