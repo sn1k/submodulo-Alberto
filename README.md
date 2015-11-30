@@ -299,7 +299,7 @@ Se añade el proceso de integración continua con snap-ci, para ello:
 
 - Aquí tenemos la etiqueta de Snap-ci, de que todo ha ido correctamente.
 
-![snapci](https://snap-ci.com/sn1k/submodulo-Alberto/branch/master/build_image)
+[![Build Status](https://snap-ci.com/sn1k/submodulo-Alberto/branch/master/build_image)](https://snap-ci.com/sn1k/submodulo-Alberto/branch/master)
 
 
 Con este último paso en snap-ci, se ha realizado la integración continua de mi aplicación, cada vez que haga un push se pasarán los test y se desplegará mi aplicación.
