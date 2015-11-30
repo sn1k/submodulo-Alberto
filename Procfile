@@ -1,1 +1,1 @@
-web: gunicorn pollaplication.wsgi --log-file -
+web: gunicorn COMBOOK.wsgi --log-file -
