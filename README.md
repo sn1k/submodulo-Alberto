@@ -1,3 +1,9 @@
+
+[![Heroku](https://www.herokucdn.com/deploy/button.png)](https://protected-ocean-7223.herokuapp.com/)
+
+[![Build Status](https://snap-ci.com/sn1k/submodulo-Alberto/branch/master/build_image)](https://snap-ci.com/sn1k/submodulo-Alberto/branch/master)
+
+
 ## **Proyecto de IV infraestructura Virtual junto con DAI DESARROLO DE APLICACIONES DE INTERNET** ##
 
 Este módulo se dedicará del alojamiento de nuestro sistema web en el servidor, por lo que conectará la aplicación con las bases de datos y realizará el despliegue de la misma.
@@ -305,6 +311,13 @@ Se añade el proceso de integración continua con snap-ci, para ello:
 Con este último paso en snap-ci, se ha realizado la integración continua de mi aplicación, cada vez que haga un push se pasarán los test y se desplegará mi aplicación.
 
 **AVANCES** se pueden ver en [avances.md](avances.md).
+
+
+Nota: **ESTRUCTURA DEL PROYECTO**: nuestra aplicación sigue la estructura siguiente: 
+-  Carpeta **COMBOOK**: la cual será la carpeta proyecto de la aplicación. Tendrá un archivo con sus urls.py respectivas que nos dirigirán a las diferentes apps(presentes en las carpetas apps). Se crea con el comando **django-admin.py startproject COOMBOK**.
+-  Carpeta **APPS**: la cual contendrá las aplicaciones de nuestra aplicación. Se crea introduciendo en la terminal **django-admin.py startapp "nombre_app"**
+- La justificación de por qué hemos seguido esta estructura es la modularización, esto nos facilitará sobretodo la manera de trabajar y hará el código más entendible y sencillo. Además django nos afrece los comandos anteriormente dichos para tal objetivo.
+
 
 
 
