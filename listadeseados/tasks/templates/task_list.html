@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Task List
+{% endblock %}
+
+{% block body %}
+    <h2>Lista de libros</h2>
+    <a href="{% url 'task-add' %}">Inserta un nuevo libro</a>
+    <ul>
+        {% for task in task_list %}
+            <li>
+                {{ task.description }}
+                -
+                {% if not task.is_done %}
+                    <a href="{% url 'task-done' task.id %}">Libro insertado</a>
+                {% else %}
+                    <span>Listo!</span>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
