@@ -44,6 +44,7 @@ Consiste en una lista donde podemos ir añadiendo los libros que deseemos. Para 
 ![app](https://i.gyazo.com/2904ee94caa4e23ba27d2998b670342b.png)
 
 Una vez dentro podemos añadir el titulo que deseemos.
+
 ![libro](https://i.gyazo.com/9ee26579a6cb474142b033d502107a2a.png)
 
 Pulsamos Aceptar y ya lo tendremos en nuestra lista de deseos.
