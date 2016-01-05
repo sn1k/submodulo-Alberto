@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <h1>Tasks Project</h1>
+        {% block body %}{% endblock %}
+        <p>Powered by Django</p>
+    </body>
+</html>
