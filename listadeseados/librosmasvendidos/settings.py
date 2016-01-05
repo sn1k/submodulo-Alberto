@@ -82,25 +82,23 @@ DATABASES = {
     }
 }
 
-#import dj_database_url
+import dj_database_url
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+ALLOWED_HOSTS = ['*']
+ON_HEROKU = os.environ.get('PORT')
+if ON_HEROKU:
+    DATABASE_URL='postgres://yhutocykkxbukr:FnPk--IYIRT-yUsOOn90xBZvaN@ec2-46-137-72-123.eu-west-1.compute.amazonaws.com:5432/dfmmsjlqs8bhqe'
+    DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
+
+ALLOWED_HOSTS = ['*']
+STATIC_URL = '/static/'
+STATIC_ROOT = 'staticfiles'
 
 
-#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-#ALLOWED_HOSTS = ['*']
-#ON_HEROKU = os.environ.get('PORT')
-#if ON_HEROKU:
-#    DATABASE_URL='postgres://yhutocykkxbukr:FnPk--IYIRT-yUsOOn90xBZvaN@ec2-46-137-72-123.eu-west-1.compute.amazonaws.com:5432/dfmmsjlqs8bhqe'
-#    DATABASES = {'default': dj_database_url.config(default=DATABASE_URL)}
-#
-#ALLOWED_HOSTS = ['*']
-
-#STATIC_URL = '/static/'#
-#STATIC_ROOT = 'staticfiles'
-#
-#
-#STATICFILES_DIRS = (    
-#    os.path.join(BASE_DIR, 'static'),
-#)
+STATICFILES_DIRS = (    
+    os.path.join(BASE_DIR, 'static'),
+)
 
 
 # Password validation
