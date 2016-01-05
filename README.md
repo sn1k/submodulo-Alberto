@@ -31,38 +31,24 @@ Este módulo abarcará el servidor de la base de datos en el cual se almacenará
 
 ##Segundo hito
 
-# Encuestas sitio web
+# Lista de libros deseados
 
-Pequeña aplicación web que permite crear y votar encuestas.
+Con esta aplicación podremos crear la lista de libros deseados para futuras compras en nuestro portal
 
-La aplicación web ha sido creada usando el tutorial de [Django](https://docs.djangoproject.com/en/1.8/intro/tutorial01/) para la asignatura infraestructura virtual
 
 
 ##Uso
 
-Para ejecutar la aplicación una vez descargada hay que usar `python manage.py runserver`
+Consiste en una lista donde podemos ir añadiendo los libros que deseemos. Para ello seleccionaremos "Insertar título".
 
-Una vez levantada podemos gestionar las encuestas escribiendo `http://127.0.0.1:8000/admin/` en nuestro navegador
+![app](https://i.gyazo.com/2904ee94caa4e23ba27d2998b670342b.png)
 
-El usuario es `admin` y la contraseña `hola`
+Una vez dentro podemos añadir el titulo que deseemos.
+![libro](https://i.gyazo.com/9ee26579a6cb474142b033d502107a2a.png)
 
-![admin](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/pollaplication/admin_zps4vvtzbcr.png)
+Pulsamos Aceptar y ya lo tendremos en nuestra lista de deseos.
 
-
-Para crear y borrar encuestas vamos a `http://127.0.0.1:8000/createpoll/` y `http://127.0.0.1:8000/deletepoll/` respectivamente
-
-
-Para votar encuestas vamos a `http://127.0.0.1:8000` donde nos aparecerán todas las que hayamos creado
-
-![cuestiones](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/pollaplication/cuestiones_zpsixvqb8yb.png)
-
-Seleccionamos una y nos mostrará las opciones posibles
-
-![opciones](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/pollaplication/cuestion1_zpskbbylwgw.png)
-
-Tras esto, se almacenará nuestro voto
-
-![resultados](http://i1045.photobucket.com/albums/b460/Alejandro_Casado/pollaplication/resultado_zpsnyo2sp0p.png)
+![addbook](https://i.gyazo.com/96ac3a8fafe7befdbb9e847c9cfde3c4.png)
 
 
 ##Herramienta de construcción:
