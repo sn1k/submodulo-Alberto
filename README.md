@@ -240,11 +240,13 @@ DATABASES = {
 ```
 - DATABASE_URL ponemos el enlace obtenido en heroku.
 
-Aplicación [app2](http://rocky-ravine-2149.herokuapp.com/).
+Aplicación [app2](http://young-brook-3499.herokuapp.com/).
 
-Ahora añadiremos snap-ci. Para ello nos registraremos en dicha web..
+Ahora añadiremos snap-ci. Para ello nos registraremos en dicha web.
 
-![snap_pipeline](https://i.gyazo.com/f7acc4fc0cea079ae0dfdbc96bb06516.png)
+![snap_pipeline](https://i.gyazo.com/36597a69996fc2b212550234b8eda784.png)
+![snap](https://i.gyazo.com/2877551b25f3f695fa84c372da063a8b.png)
+
 
 - Compruebo que el repositorio esta conectado con **Github** y que tiene el despliegue automático ( consultar pestaña Deploy ).
 
@@ -254,14 +256,10 @@ Ahora añadiremos snap-ci. Para ello nos registraremos en dicha web..
 
 
 - Aquí tenemos la etiqueta de Snap-ci, de que todo ha ido correctamente.
+[![Build Status](https://snap-ci.com/sn1k/submodulo-alberto/branch/master/build_image)](https://snap-ci.com/sn1k/submodulo-alberto/branch/master)
 
-[![Build Status](https://snap-ci.com/sn1k/submodulo-Alberto/branch/master/build_image)](https://snap-ci.com/sn1k/submodulo-Alberto/branch/master)
 
-
-Con este último paso en snap-ci, se ha realizado la integración continua de mi aplicación, cada vez que haga un push se pasarán los test y se desplegará mi aplicación.
-
--  Nota: **AVANCES**: la utilización de JSON con sus tests. Puede verse en el archivo **views.py**, su llamada en los **tests.py** y el archivo **serializers.py**.
-
+Con este último paso en snap-ci, damos por concluida la integración continua de mi aplicación, cada vez que haga un push se pasarán los test y se desplegará automáticamente.
 
 
 
