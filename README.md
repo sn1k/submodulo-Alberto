@@ -179,7 +179,10 @@ En esta práctica desplegaremos nuestra aplicación en un Paas. Usaremos Heroku 
 
 - Procfile, el cual indica a heroku que tiene que lanzar:
 ```
-web: gunicorn pollaplication.wsgi --log-file -
+web: gunicorn librosdeseados.wsgi --log-file -
+
+#foreman
+#web: django-admin.py runserver --settings=librosdeseados.settings
 
 ```
 - requirements.txt: usado para especificar todo lo necesario para nuestra aplicación vaya, en mi caso es:
@@ -207,8 +210,6 @@ Despues de esto nos registramos en Heroku. Una vez registrados tendríamos que e
 
 heroku login
 heroku create
-git add .
-git commit -m "upload v2
 git push heroku master
 
 ```
