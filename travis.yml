@@ -1,18 +1,13 @@
 # Build Environment
 build_environment: Ubuntu 14.04
 
-# language setting
-language: node_js
-
-# version numbers, testing against two versions of node
-node_js:
- - "0.11"
- - "0.12"
-
-# npm install runs by default but shown here for illustrative purposes
-before_install:
- - npm install -g mocha
-
- # Running npm test to run your test cases
+language: python
+python:
+ - "2.7"
+# command to install dependencies
+install:
+ - python setup.py install
+ - pip install -r requirements.txt
+# command to run tests
 script:
- - mocha
+ - python manage.py test
