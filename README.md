@@ -130,7 +130,7 @@ Este fichero inicial, se ha realizado a través del tutorial de django, su funci
 
 ###Integración continua
 
-Para la integración contínua usaremos travis [travis](https://travis-ci.org/) ya que es fácil de usar y entender( es similar a Shippable, que también lo he usado en los ejercicios).
+Para esta integración contínua usaremos travis [travis](https://travis-ci.org/) ya que es fácil de usar y entender( es similar a Shippable, que también lo he usado en los ejercicios).
 
 Para poder usar travis:
 
