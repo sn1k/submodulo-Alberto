@@ -157,6 +157,7 @@ script:
 Una vez subido a github, e indicado travis que trabaje con repositorio correspondiente debe salir esto:
 
 ![travis](https://i.gyazo.com/c1361cfcd8a1122644241ec491767f89.png)
+![travis2](http://i.imgur.com/PNcRhcn.png)
 
 
 #Hito 3
