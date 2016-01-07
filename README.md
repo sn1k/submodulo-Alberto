@@ -1,5 +1,8 @@
 #NUEVA APP HITO 3
 [![Build Status](https://snap-ci.com/sn1k/submodulo-alberto/branch/master/build_image)](https://snap-ci.com/sn1k/submodulo-alberto/branch/master)
+[![Build Status](https://snap-ci.com/sn1k/submodulo-alberto/branch/master/build_image)](https://snap-ci.com/sn1k/submodulo-alberto/branch/master)
+
+[![Heroku](https://www.herokucdn.com/deploy/button.png)](https://young-brook-3499.herokuapp.com/)
 
 ## **Proyecto de IV infraestructura Virtual junto con DAI DESARROLO DE APLICACIONES DE INTERNET** ##
 
@@ -223,7 +226,7 @@ DATABASES = {
 ```
 - DATABASE_URL ponemos el enlace obtenido en heroku.
 
-Aplicación [app2](http://young-brook-3499.herokuapp.com/).
+Aplicación ![app2](http://young-brook-3499.herokuapp.com/).
 
 Ahora añadiremos snap-ci. Para ello nos registraremos en dicha web.
 
