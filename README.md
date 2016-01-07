@@ -266,6 +266,7 @@ Una vez dentro de dicha imagen lanzamos el servicio y podremos entrar desde fuer
 ###Fabric
 Fabric es una herramienta para despliegue remoto. Para usar dicha herramienta necesitamos un archivo [fabfile](https://github.com/sn1k/submodulo-alberto/blob/master/fabfile.py) que se instalara en una [instancia](https://github.com/sn1k/submodulo-alberto/blob/master/createInstance.md) previamente creada en amazon.
 
-Enlace a dicha [aplicación]()
+Una vez creada la instancia, [conectaremos y lanzaremos](https://github.com/sn1k/submodulo-alberto/blob/master/firstAppAmazon.md) nuestra aplicación.
+Enlace a dicha [aplicación](http://ec2-52-88-219-249.us-west-2.compute.amazonaws.com/)
 
 
