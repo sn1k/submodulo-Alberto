@@ -1,5 +1,4 @@
-#Ejecucion remota del docker
-#Instalacion de docker y descarga de imagen
+#Dock download & install
 def getDocker():
 	run('sudo apt-get update')
 	run('sudo apt-get install -y docker.io')
