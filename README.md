@@ -240,18 +240,31 @@ Ahora añadiremos snap-ci. Para ello nos registraremos en dicha web.
 
 ![github](https://i.gyazo.com/7e00c7ae2240e3c38e7a7e07cb89a391.png)
 
-- Ahora, cada vez que realicemos un push a nuestro reopsitorio, se realizará un testeo previo a su posterior despliegue.
-
-
-- Aquí tenemos la etiqueta de Snap-ci, de que todo ha ido correctamente.
-[![Build Status](https://snap-ci.com/sn1k/submodulo-alberto/branch/master/build_image)](https://snap-ci.com/sn1k/submodulo-alberto/branch/master)
-
-
-Con este último paso en snap-ci, damos por concluida la integración continua de mi aplicación, cada vez que haga un push se pasarán los test y se desplegará automáticamente.
+Ahora, cada vez que realicemos un push a nuestro reopsitorio, se realizará un testeo previo a su posterior despliegue.
 
 
 
 
+### Entorno de pruebas
 
+Para realizar esta práctica utilizaremos Docker debido a que nos resulta familiar por los ejercicios.
+
+![docker](https://i.gyazo.com/ebf3b1115e7c069c011d4a7d3c4f2588.png)
+
+Enlace a dicha imagen [aquí](https://hub.docker.com/r/sn1k/submodulo-alberto/)
+
+Comandos necesarios para descargar esta imagen y hacerla funcionar:
+ - sudo docker pull sn1k/submodulo-alberto
+ - sudo docker run -i -t sn1k/submodulo-alberto /bin/bash
+ 
+Una vez dentro de dicha imagen lanzamos el servicio y podremos entrar desde fuera.
+![docker](https://i.gyazo.com/76b126f02c0ce050c763a30f0d7ab717.png)
+
+[Aquí](https://github.com/sn1k/submodulo-alberto/blob/master/installDocker.sh) está disponible el script de despliegue para descargarse la aplicación junto con su imagen.
+
+###Fabric
+Fabric es una herramienta para despliegue remoto. Para usar dicha herramienta necesitamos un archivo [fabfile](https://github.com/sn1k/submodulo-alberto/blob/master/fabfile.py) que se instalara en una [instancia](https://github.com/sn1k/submodulo-alberto/blob/master/createInstance.md) previamente creada en amazon.
+
+Enlace a dicha [aplicación]()
 
 
