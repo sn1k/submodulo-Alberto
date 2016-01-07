@@ -36,8 +36,3 @@ Acto seguido, debemos añadir la llave a nuestro keyring.
 
 
 
-![]()
-![]()
-![]()
-![]()
-
