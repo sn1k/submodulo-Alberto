@@ -1,6 +1,6 @@
 #NUEVA APP HITO 3
 [![Build Status](https://snap-ci.com/sn1k/submodulo-alberto/branch/master/build_image)](https://snap-ci.com/sn1k/submodulo-alberto/branch/master)
-[![Build Status](https://snap-ci.com/sn1k/submodulo-alberto/branch/master/build_image)](https://snap-ci.com/sn1k/submodulo-alberto/branch/master)
+[![Build Status](https://travis-ci.org/sn1k/submodulo-alberto.svg?branch=master)](https://travis-ci.org/sn1k/submodulo-alberto)
 
 [![Heroku](https://www.herokucdn.com/deploy/button.png)](https://young-brook-3499.herokuapp.com/)
 
