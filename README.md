@@ -61,7 +61,7 @@ Pulsamos Aceptar y ya lo tendremos en nuestra lista de deseos.
 
 ##Herramienta de construcción:
 
-Para este hito hemos creado un makefile que reune las siguientes ordenes:
+Para este hito hemos creado un makefile que reune las siaguientes ordenes:
 
 
 - install: instalamos todo lo necesario **make install**
@@ -227,7 +227,7 @@ DATABASES = {
 ```
 - DATABASE_URL ponemos el enlace obtenido en heroku.
 
-Aplicación ![app2](http://young-brook-3499.herokuapp.com/).
+[Aplicación](http://young-brook-3499.herokuapp.com/)
 
 Ahora añadiremos snap-ci. Para ello nos registraremos en dicha web.
 
