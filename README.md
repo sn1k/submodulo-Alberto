@@ -254,9 +254,10 @@ Para realizar esta práctica utilizaremos Docker debido a que nos resulta famili
 Enlace a dicha imagen [aquí](https://hub.docker.com/r/sn1k/submodulo-alberto/)
 
 Comandos necesarios para descargar esta imagen y hacerla funcionar:
+```
  - sudo docker pull sn1k/submodulo-alberto
  - sudo docker run -i -t sn1k/submodulo-alberto /bin/bash
- 
+ ```
 Una vez dentro de dicha imagen lanzamos el servicio y podremos entrar desde fuera.
 ![docker](https://i.gyazo.com/76b126f02c0ce050c763a30f0d7ab717.png)
 
