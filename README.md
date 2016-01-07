@@ -1,6 +1,10 @@
 #NUEVA APP HITO 3
 [![Build Status](https://snap-ci.com/sn1k/submodulo-alberto/branch/master/build_image)](https://snap-ci.com/sn1k/submodulo-alberto/branch/master)
 
+[![Build Status](https://travis-ci.org/sn1k/submodulo-alberto.svg?branch=master)](https://travis-ci.org/sn1k/submodulo-alberto)
+
+[![Heroku](https://www.herokucdn.com/deploy/button.png)](https://young-brook-3499.herokuapp.com/)
+
 ## **Proyecto de IV infraestructura Virtual junto con DAI DESARROLO DE APLICACIONES DE INTERNET** ##
 
 Este módulo se dedicará del alojamiento de nuestro sistema web en el servidor, por lo que conectará la aplicación con las bases de datos y realizará el despliegue de la misma.
@@ -57,7 +61,7 @@ Pulsamos Aceptar y ya lo tendremos en nuestra lista de deseos.
 
 ##Herramienta de construcción:
 
-Para este hito hemos creado un makefile que reune las siguientes ordenes:
+Para este hito hemos creado un makefile que reune las siaguientes ordenes:
 
 
 - install: instalamos todo lo necesario **make install**
@@ -153,6 +157,7 @@ script:
 Una vez subido a github, e indicado travis que trabaje con repositorio correspondiente debe salir esto:
 
 ![travis](https://i.gyazo.com/c1361cfcd8a1122644241ec491767f89.png)
+![travis2](http://i.imgur.com/PNcRhcn.png)
 
 
 #Hito 3
@@ -223,7 +228,7 @@ DATABASES = {
 ```
 - DATABASE_URL ponemos el enlace obtenido en heroku.
 
-Aplicación [app2](http://young-brook-3499.herokuapp.com/).
+[Aplicación](http://young-brook-3499.herokuapp.com/)
 
 Ahora añadiremos snap-ci. Para ello nos registraremos en dicha web.
 
