@@ -1,3 +1,7 @@
+
+from fabric.api import run, local, hosts, cd
+from fabric.contrib import django
+
 #Dock download & install
 def getDocker():
 	run('sudo apt-get update')
