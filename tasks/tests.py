@@ -4,7 +4,7 @@ import datetime
 from django.utils import timezone
 from django.test import TestCase
 
-from .models import Question, Choice
+from .models import Task
 
 # Create your tests here.
 
