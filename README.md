@@ -124,7 +124,7 @@ class QuestionMethodTests(TestCase):
 
 ```
 
-Aquí se ubica mi archivo [test.py](aplicacion/pollaplication/polls/tests.py).
+Aquí se ubica mi archivo [test.py](https://github.com/sn1k/submodulo-alberto/blob/master/tasks/tests.py).
 
 Este fichero inicial, se ha realizado a través del tutorial de django, su funcionalidad inicial básica que presenta esta pequeña aplicación se piensa mantener para nuestro proyecto, por eso lo he añadido como trabajo de mi proyecto.
 
