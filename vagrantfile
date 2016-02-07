@@ -29,7 +29,7 @@ Vagrant.configure('2') do |config|
 
     config.vm.provision "ansible" do |ansible|
         ansible.sudo = true
-        ansible.playbook = "playbook.yml"
+        ansible.playbook = "aprovisionamiento.yml"
         ansible.verbose = "v"
         ansible.host_key_checking = false
   end
