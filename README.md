@@ -345,5 +345,11 @@ aprovisionamiento.yml (Ansible)
     command: nohup sudo python submodulo-alberto/manage.py runserver 0.0.0.0:80
 ```
 
+![img](https://i.gyazo.com/9809ac2670890116c714376380e3bdd2.png)
 
+![img2](https://i.gyazo.com/91e9ae9642ffde9e001c62200a5ca03b.png)
+
+Y tras un buen rato, ya tendremos nuestra aplicación disponible
+
+![img](https://i.gyazo.com/dc874659f992b248d78555e2ace3be8d.png)
 
