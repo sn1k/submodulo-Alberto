@@ -5,6 +5,9 @@
 
 [![Heroku](https://www.herokucdn.com/deploy/button.png)](https://young-brook-3499.herokuapp.com/)
 
+[![amazon](https://i.gyazo.com/5f6b8158588229bbc0dd0fc5e279e215.png)](http://ec2-52-36-68-68.us-west-2.compute.amazonaws.com/)
+
+
 ## **Proyecto de IV infraestructura Virtual junto con DAI DESARROLO DE APLICACIONES DE INTERNET** ##
 
 Este módulo se dedicará del alojamiento de nuestro sistema web en el servidor, por lo que conectará la aplicación con las bases de datos y realizará el despliegue de la misma.
@@ -349,7 +352,9 @@ aprovisionamiento.yml (Ansible)
 
 ![img2](https://i.gyazo.com/91e9ae9642ffde9e001c62200a5ca03b.png)
 
+![img3](https://i.gyazo.com/213067de9ae395c5df2005b8a4a5b5d6.png)
+
 Y tras un buen rato, ya tendremos nuestra aplicación disponible
 
-![img](https://i.gyazo.com/dc874659f992b248d78555e2ace3be8d.png)
+![img](https://i.gyazo.com/c6f51ed6d92052fcdf8827b7b4a0a8c5.png)
 
